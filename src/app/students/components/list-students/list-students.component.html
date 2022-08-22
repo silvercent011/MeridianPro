@@ -1,6 +1,14 @@
-<main>
-  <app-card-student
-    *ngFor="let student; in: students"
+<div class="flex">
+  <div class="form-control">
+    <label class="label cursor-pointer">
+      <span class="label-text">Apenas Matriculados?</span>
+      <input type="checkbox" class="toggle toggle-primary" (change)="onChange()" [(ngModel)]="onlyActive" [checked]="onlyActive" />
+    </label>
+  </div>
+</div>
+<main class="grid md:grid-cols-3 gap-3 container mx-auto">
+  <student-card-student
+    *ngFor="let student of studentsToRender"
     [student]="student"
-  ></app-card-student>
+  ></student-card-student>
 </main>

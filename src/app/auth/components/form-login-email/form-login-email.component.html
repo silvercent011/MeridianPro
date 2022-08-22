@@ -1,0 +1,25 @@
+<form (submit)="loginWithCPF()">
+  <div class="form-control max-w-xs">
+    <label class="label" for="cpf">CPF</label>
+    <input
+      class="input input-bordered"
+      type="string"
+      required
+      id="cpf"
+      [(ngModel)]="cpf"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <div class="form-control max-w-xs">
+    <label class="label" for="password">Senha</label>
+    <input
+      class="input input-bordered"
+      type="password"
+      required
+      id="password"
+      [(ngModel)]="password"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </div>
+  <input class="btn btn-primary" type="submit" value="Entrar" />
+</form>
