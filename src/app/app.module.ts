@@ -10,9 +10,10 @@ import { FormsModule } from "@angular/forms";
 import { AuthModule } from "./auth/auth.module";
 import { StudentsModule } from "./students/students.module";
 import { HomeModule } from "./home/home.module";
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

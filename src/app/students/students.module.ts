@@ -5,12 +5,14 @@ import { StudentHomeComponent } from "./views/student-home/student-home.componen
 import { ListStudentsComponent } from "./components/list-students/list-students.component";
 import { StudentsRoutingModule } from "./students-routing.module";
 import { FormsModule } from "@angular/forms";
+import { StudentListPageComponent } from './views/student-list-page/student-list-page.component';
 
 @NgModule({
   declarations: [
     CardStudentComponent,
     StudentHomeComponent,
     ListStudentsComponent,
+    StudentListPageComponent,
   ],
   imports: [CommonModule, FormsModule, StudentsRoutingModule],
 })

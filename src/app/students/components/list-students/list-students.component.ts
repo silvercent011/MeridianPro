@@ -12,7 +12,7 @@ export class ListStudentsComponent implements OnInit {
 
   studentsToRender: Student[] = [];
 
-  onlyActive: boolean = false;
+  onlyActive: boolean = true;
 
   constructor(private studentsService: StudentsService) {}
 
