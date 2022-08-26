@@ -4,17 +4,16 @@ import { AuthService } from "../../services/auth.service";
 import { User } from "../../types/user";
 
 @Component({
-  selector: "auth-form-login-email",
+  selector: "app-form-login-email",
   templateUrl: "./form-login-email.component.html",
   styles: [],
 })
-export class FormLoginEmailComponent implements OnInit {
+export class FormLoginEmailComponent {
   cpf = "";
   password = "";
 
   constructor(private authService: AuthService) {}
 
-  ngOnInit(): void {}
 
   loginWithCPF() {
     this.authService.SignInWithCPF(this.cpf, this.password).subscribe(

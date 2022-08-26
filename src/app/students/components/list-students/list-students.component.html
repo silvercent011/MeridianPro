@@ -10,9 +10,9 @@
     <button class="btn btn-primary">Cadastrar Aluno</button>
   </div>
   <main class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto p-3">
-    <student-card-student
+    <app-card-student
     *ngFor="let student of studentsToRender"
     [student]="student"
-    ></student-card-student>
+    ></app-card-student>
   </main>
 </div>
